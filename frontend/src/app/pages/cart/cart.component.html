@@ -59,7 +59,7 @@
     <h5 *ngIf="!selectedCoupon"style="display: inline;">Total: {{total | currency}} </h5>
     <h5 *ngIf="selectedCoupon" style="display: inline;">Total: {{total-total*0.2 | currency}}</h5>
 
-    <button (click)="checkout()" class="btn btn-warning float-right">Checkout</button>
+    
     <!--<button (click)="getCoupon()" class="btn btn-warning float-right">check</button> -->
     <!--<select [(ngModel)]="selectedCoupon" name="Coupon" class="form-control" (ngModelchange)='selected($event)'>
             <option>Select Coupon</option>
@@ -68,6 +68,7 @@
             </option>
     </select> -->
 </div>
+<button (click)="checkout()" class="btn btn-warning">PLACE ORDER</button>
 <ng-template #empty>
     <h4 class="text-muted text-center">Cart is empty. Go to get something! :)</h4>
 </ng-template>
