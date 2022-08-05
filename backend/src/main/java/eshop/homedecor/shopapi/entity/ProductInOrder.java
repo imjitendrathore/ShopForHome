@@ -13,7 +13,6 @@ import java.util.Objects;
 
 @Entity
 @Data
-@NoArgsConstructor
 public class ProductInOrder {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

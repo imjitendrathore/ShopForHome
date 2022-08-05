@@ -14,7 +14,6 @@ import java.io.Serializable;
 @Entity
 @Data
 @Table(name = "users")
-@NoArgsConstructor
 public class User implements Serializable {
 
     private static final long serialVersionUID = 4887904943282174032L;
